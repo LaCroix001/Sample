@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Ujian 4 Subjek PLN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Ujian Kompetensi 4 Subjek</h1>
+        
+        <div id="quiz">
+            <div id="subject-info"></div>
+            <h2 id="question-number"></h2>
+            <h2 id="question">Pertanyaan akan muncul di sini...</h2>
+            <div id="options" class="options-container"></div>
+            <div id="timer">Waktu Tersisa: <span id="time-display">00:00</span></div>
+        </div>
+
+        <button id="next-btn" class="btn">Soal Berikutnya (1/120)</button>
+        <button id="submit-btn" class="btn submit-btn" style="display: none;">Lihat Hasil</button>
+
+        <div id="result" class="result-container" style="display: none;">
+            <h2>Hasil Ujian</h2>
+            <p id="score-text"></p>
+            <button id="restart-btn" class="btn restart-btn">Ulangi Ujian</button>
+            
+            <div id="review-container">
+                <h3>Review Jawaban dan Pembahasan:</h3>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
