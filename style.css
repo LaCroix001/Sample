@@ -1,0 +1,241 @@
+/* File: style.css (Dengan Sidebar Navigasi) */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Kontainer utama untuk mengatur tata letak Quiz dan Sidebar */
+.main-content-wrapper {
+    display: flex;
+    max-width: 1200px; /* Lebar maksimum untuk layout dua kolom */
+    width: 100%;
+    gap: 20px;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    flex: 3; /* Mengambil 3/4 lebar */
+}
+
+/* --- SIDEBAR NAVIGASI (Nomor Soal) --- */
+.quiz-sidebar {
+    flex: 1; /* Mengambil 1/4 lebar */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Agar sidebar tetap terlihat saat scroll */
+    top: 20px;
+    height: fit-content;
+}
+
+.quiz-sidebar h3 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+#question-list {
+    display: flex;
+    flex-wrap: wrap; /* Tombol akan pindah baris */
+    gap: 8px;
+    justify-content: center;
+}
+
+.question-jump-btn {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.question-jump-btn:hover {
+    background-color: #e9ecef;
+}
+
+/* Status: Sedang Dikerjakan */
+.question-jump-btn.current {
+    background-color: #ffc107; /* Kuning/Amber */
+    color: #333;
+    font-weight: bold;
+    border-color: #ffc107;
+}
+
+/* Status: Sudah Dijawab */
+.question-jump-btn.answered {
+    background-color: #28a745; /* Hijau */
+    color: white;
+    border-color: #28a745;
+}
+
+/* --- Tampilan Quiz (seperti sebelumnya) --- */
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#subject-info {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#question {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    padding: 12px 15px;
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-size: 1em;
+}
+
+.option-btn:hover {
+    background-color: #dee2e6;
+}
+
+.option-btn.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+#next-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#next-btn:hover {
+    background-color: #1e7e34;
+}
+
+.submit-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #c82333;
+}
+
+.restart-btn {
+    background-color: #17a2b8;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.final-score {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 15px 0;
+}
+
+#review-container h3 {
+    margin-top: 25px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    color: #007bff;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.user-correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.user-incorrect {
+    color: #dc3545;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.correct-answer-text {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.explanation-text {
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #e9f7ff;
+    border-left: 5px solid #007bff;
+    font-style: italic;
+    color: #4a4a4a;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+/* Media Query untuk layar kecil (agar sidebar di bawah) */
+@media (max-width: 900px) {
+    .main-content-wrapper {
+        flex-direction: column;
+    }
+    .quiz-sidebar {
+        position: static;
+    }
+}
