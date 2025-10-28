@@ -808,38 +808,39 @@ const quizData = [
         explanation: "C selalu hadir. A dan B tidak boleh bersama. A dan B bisa bekerja dengan C secara bergantian. D tidak memiliki batasan. Jadi, A, B, dan D semua dapat bekerja bersama C (walau A dan B harus bergantian)."
     },
     {
-        question: "116. Konsumsi gardu: 50, 60, 55, 65, 70 kWh. Rata-rata konsumsi gardu: (Logika Hitungan & Persentase)",
+        question: "116. Sebuah gardu mengkonsumsi 50 kWh, gardu lain 60, 55, 65, 70. Rata-rata konsumsi gardu: (Logika Hitungan & Persentase)",
         options: ["a. 58 kWh", "b. 60 kWh", "c. 62 kWh", "d. 64 kWh"],
         answer: "b. 60 kWh",
         subject: "Analytical Reasoning",
         explanation: "Total = $50+60+55+65+70 = 300 \text{ kWh}$. Rata-rata = $300 / 5 = 60 \text{ kWh}$."
     },
     {
-        question: "117. Total konsumsi gardu 3 dan 5: 55 + 70 = … (Logika Hitungan & Persentase)",
+        question: "117. Terdapat 5 gardu dengan konsumsi masing masing sebesar 50 kWh, 55 kWh, 60 kWh, 65 kWh, 70 kWh. Total konsumsi gardu 2 dan 5 adalah … (Logika Hitungan & Persentase)",
         options: ["a. 120", "b. 125", "c. 130", "d. 135"],
         answer: "b. 125",
         subject: "Analytical Reasoning",
-        explanation: "Total = $55 + 70 = 125 \text{ kWh}$."
+        explanation: "Total = 55 + 70 = 125 \text{ kWh}$."
     },
     {
-        question: "118. Persentase gardu 2 (60 kWh) dari total konsumsi (300 kWh): (Logika Hitungan & Persentase)",
+        question: "118. Berapa persentase gardu 3 (60 kWh) dari total konsumsi (300 kWh): (Logika Hitungan & Persentase)",
         options: ["a. 18%", "b. 20%", "c. 22%", "d. 24%"],
         answer: "b. 20%",
         subject: "Analytical Reasoning",
-        explanation: "Persentase = $(60 / 300) \times 100\% = 1/5 \times 100\% = 20\%$."
+        explanation: "Persentase = 60/300=20%."
     },
     {
-        question: "119. Jika gardu 1 tambah 20 kWh, rata-rata baru: (Logika Hitungan & Persentase)",
+        question: "119. Terdapat 5 gardu dengan konsumsi masing masing sebesar 50 kWh, 55 kWh, 60 kWh, 65 kWh, 70 kWh. Kemudian gardu 1 ditambah dengan konsumsi 20 kWh, rata-ratanya sebesar: (Logika Hitungan & Persentase)",
         options: ["a. 62", "b. 63", "c. 64", "d. 65"],
         answer: "c. 64",
         subject: "Analytical Reasoning",
-        explanation: "Total baru = $300 + 20 = 320 \text{ kWh}$. Rata-rata baru = $320 / 5 = 64 \text{ kWh}$."
+        explanation: "Total baru = 300 + 20 = 320 kWh. Rata-rata baru = $320 / 5 = 64 kWh."
     },
     {
-        question: "120. Jika PLN memindahkan 5 kWh dari gardu 5 ke gardu 1, rata-rata tetap sama? (Logika Hitungan & Persentase)",
+        question: "120. Terdapat 5 gardu dengan masing masing konsumsi 50 kWh, 55 kWh, 60 kWh, 65 kWh, 70 kWh. Jika PLN memindahkan 5 kWh dari gardu 5 ke gardu 1, rata-rata tetap sama? (Logika Hitungan & Persentase)",
         options: ["a. Ya", "b. Tidak", "c. Tidak bisa dihitung", "d. Hanya jika gardu 2 dikurangi juga"],
         answer: "a. Ya",
         subject: "Analytical Reasoning",
         explanation: "Rata-rata dihitung dari total konsumsi. Memindahkan nilai di antara anggota kelompok (gardu) tidak mengubah nilai total. $300 / 5$ akan tetap $300 / 5$."
     }
+
 ];
